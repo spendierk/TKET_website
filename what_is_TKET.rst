@@ -6,6 +6,7 @@ TKET is an advanced, open-source software development kit designed for gate-base
 
 
 In the current NISQ (Noisy Intermediate-Scale Quantum) era, devices have limited qubits and higher error rates. TKET plays a crucial role in optimizing and simplifying quantum circuits to navigate these challenges, ensuring reliable outcomes even with device constraints and noise considerations.
+
 Key Features:
 -------------
 
