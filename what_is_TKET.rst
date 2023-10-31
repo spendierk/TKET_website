@@ -55,6 +55,24 @@ The second schematic illustrates the architecture of TKET, showcasing its versat
 - **Extension Modules**: ``pytket`` `extensions <https://cqcl.github.io/pytket-extensions/api/index.html>`_ facilitate connections to various backends, representing links to QPUs or simulators. Cloud extensions further enhance access to platforms like Azure and Braket. Additionally, these modules support the cross-compilation of circuits from popular quantum libraries, seamlessly integrating ``pytket``'s compilation strengths with other software tools.
 
 
+Some Additional TKET Features
+------------------------
+- **Circuit Construction Tools:**  
+   TKET provides a wide range of tools to aid in constructing quantum circuits. This includes standard gates, circuit boxes, and various registers.
+- **Constructing a Circuit from QASM and QIR:**  
+   Import circuits seamlessly using QASM (Quantum Assembly Language) and QIR (Quantum Intermediate Representation).
+- **Rebases:**  
+   Have a circuit in one gateset and need it in another? TKET's rebasing feature allows you to rewrite a circuit in a desired gateset.
+- **Qubit Placement and Routing:**  
+   For optimizing the efficiency of quantum algorithms, TKET offers tools for optimal qubit placement and routing.
+- **Custom Optimization:**  
+   Enhance the performance of your quantum circuits with TKET's custom optimization techniques, tailoring solutions to specific hardware constraints and requirements.
+- **ZX Diagrams:**  
+   For those who prefer graphical representations, TKET supports ZX Diagrams – a graphical language for quantum computing.
+ 
+.. note:: These are just some additional features. TKET's feature set is ever-evolving, aiming to provide users with a comprehensive toolkit for quantum computing tasks.
+
+
 How To Cite
 -----------
 
