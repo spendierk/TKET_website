@@ -21,57 +21,40 @@ Target Audience
 This guide is for readers familiar with quantum computing's circuit model. Dive into a detailed tour of TKET, from basics to advanced techniques, to enhance your quantum experiments.
 
 
-Quantum Computing Stack Overview:
----------------------------------
-The following schematic provides a comprehensive overview of the quantum computing stack, detailing the progression from high-level tasks to the physical execution on quantum hardware.
+Quantum Computing Stack:
+------------------------
+This schematic illustrates the quantum computing stack, from high-level tasks down to physical quantum hardware execution.
 
 .. image:: https://github.com/spendierk/TKET_website/blob/main/QA_workflow.jpg
-   :alt: Alternative text for the image
+   :alt: Quantum Computing Stack diagram
    :width: 800px
    :align: center
 
-- **Use Cases**: These represent specific tasks or challenges one might want to address using quantum computing, like machine learning, chemistry, or optimization problems.
-- **Applications Software**: At this layer, specialized algorithms, such as the Quantum Fourier Transform (QFT), are created to generate quantum circuits using a universal set of gates.
-- **Quantum Circuit**: Represents the raw quantum algorithm with universal gatesets. Here, you can visualize algorithms like QFT as they are intended to operate at a high level.
-- **TKET Optimization**: A critical phase where quantum circuits are refined and optimized considering specific quantum hardware constraints. These constraints include limited qubit connectivity, native gatesets (e.g., ECR, ID, RZ, SX, X), and error rates.
-- **Quantum Simulator**: Before running a quantum algorithm on an actual quantum processor, it can be tested on a quantum simulator. This software tool mimics the behavior of a quantum computer, allowing developers to understand potential outcomes, troubleshoot issues, and refine algorithms without directly using quantum hardware.
-- **Hardware Translation**: Once the circuit is optimized with tools like TKET, it is translated into machine code that quantum processors (QPUs) understand. This code can be directly executed on QPUs or simulated using quantum simulators.
-- **Quantum Processor**: This is the hardware layer where the quantum computations physically take place. Quantum circuits in machine code are executed on these quantum processing units to get the desired results.
+- **Use Cases**: Tasks or challenges addressed using quantum computing, such as machine learning, chemistry, or optimization.
+- **Application Software**: Here, specialized algorithms generate quantum circuits from a universal set of gates, like the Quantum Fourier Transform (QFT).
+- **Quantum Circuit**: The raw quantum algorithm using universal gate sets, showcasing high-level operations of algorithms like QFT.
+- **TKET Optimization**: A crucial stage where quantum circuits are tailored for specific quantum hardware constraints, considering qubit connectivity, native gates, and error rates.
+- **Quantum Simulator**: A tool that emulates quantum computer behavior, letting developers test and refine algorithms without using actual quantum hardware.
+- **Hardware Translation**: Post-optimization, the circuit is converted into machine code for quantum processors (QPUs) or quantum simulators.
+- **Quantum Processor**: The hardware layer where quantum circuits are physically executed to produce results.
 
 
-
-Key Features:
--------------
-The second schematic illustrates the architecture of TKET, showcasing its versatile compatibility with quantum libraries, its robust compiler capabilities, and the diverse range of quantum processing units and simulators it targets.
+TKET Architecture Overview:
+---------------------------
+The following schematic provides a glimpse into TKET's architecture, emphasizing its broad compatibility with quantum libraries, advanced compilation, and diverse target quantum devices and simulators.
 
 .. image:: https://github.com/spendierk/TKET_website/blob/main/tket_architecture.jpg
-   :alt: Alternative text for the image
+   :alt: TKET Architecture diagram
    :width: 600px
    :align: center
 
-- **Quantum Compiler**: TKET, underpinned by a high-performance C++ library, is a high-performance compiler that tailors quantum circuits to the constraints of specific quantum hardware and simulators. Within TKET's C++ core, quantum circuits are rewritten, device constraints are solved, and optimization is performed.
-- **Platform Agnostic**: TKET can target a variety of quantum processing units (QPUs) and simulators. This is where quantum circuits are executed. Cloud access through specific platforms is also available.
-- **Integration with Libraries**: TKET is compatible with popular quantum libraries, offering the ability to build circuits seamlessly.
-- **Python Interface**: TKET is accessible through its Python frontend package, ``pytket``, available on GitHub and installed with the command ``pip install pytket``. For any difficulties with installation, please consult our `troubleshooting <https://cqcl.github.io/tket/pytket/api/install.html>`_ page.
-- **Extension Modules**: ``pytket`` `extensions <https://cqcl.github.io/pytket-extensions/api/index.html>`_ facilitate connections to various backends, representing links to QPUs or simulators. Cloud extensions further enhance access to platforms like Azure and Braket. Additionally, these modules support the cross-compilation of circuits from popular quantum libraries, seamlessly integrating ``pytket``'s compilation strengths with other software tools.
+- **Quantum Compiler**: Anchored by a C++ core, TKET is an efficient compiler adjusting quantum circuits for specific quantum hardware and simulator constraints. Here, quantum circuits undergo rewriting, device constraint resolution, and optimization.
+- **Platform Independence**: TKET targets various quantum processors and simulators, with added cloud access through select platforms.
+- **Library Integration**: Compatible with leading quantum libraries, TKET simplifies circuit creation.
+- **Python Interface**: Access TKET via its Python frontend, ``pytket``. Installation is as simple as ``pip install pytket``. For installation issues, refer to our `troubleshooting guide <https://cqcl.github.io/tket/pytket/api/install.html>`_.
+- **Extension Modules**: ``pytket`` `extensions <https://cqcl.github.io/pytket-extensions/api/index.html>`_ connect to different backends and support the cross-compilation of circuits from well-known quantum libraries. 
 
-
-Some Additional TKET Features (could leave out or write a closing paragraph in the previous section)
-------------------------
-- **Circuit Construction Tools:**  
-   TKET provides a wide range of tools to aid in constructing quantum circuits. This includes standard gates, circuit boxes, and various registers.
-- **Constructing a Circuit from QASM and QIR:**  
-   Import circuits seamlessly using QASM (Quantum Assembly Language) and QIR (Quantum Intermediate Representation).
-- **Rebases:**  
-   Have a circuit in one gateset and need it in another? TKET's rebasing feature allows you to rewrite a circuit in a desired gateset.
-- **Qubit Placement and Routing:**  
-   For optimizing the efficiency of quantum algorithms, TKET offers tools for optimal qubit placement and routing.
-- **Custom Optimization:**  
-   Enhance the performance of your quantum circuits with TKET's custom optimization techniques, tailoring solutions to specific hardware constraints and requirements.
-- **ZX Diagrams:**  
-   For those who prefer graphical representations, TKET supports ZX Diagrams – a graphical language for quantum computing.
- 
-.. note:: These are just some additional features. TKET's feature set is ever-evolving, aiming to provide users with a comprehensive toolkit for quantum computing tasks.
+In addition to the core attributes of its architecture, TKET further bolsters its capability with an array of other notable features. From the flexibility of constructing quantum circuits with an assortment of tools, including standard gates and circuit boxes, to the ease of importing circuits via QASM and QIR. Its rebasing capability ensures your circuits can transition between different gatesets effortlessly. To optimize the execution of quantum algorithms, TKET integrates advanced qubit placement, routing, and custom optimization techniques tailored for unique hardware constraints. For enthusiasts of graphical computation, the support for ZX Diagrams offers an intuitive representation. 
 
 
 How To Cite
@@ -95,7 +78,7 @@ Support
 - For team-specific support, research partnerships, or commercial license queries, contact us at info@cambridgequantum.com. For support-related questions, write to tket-support@cambridgequantum.com.
 
 
-References
+References (need to update?)
 -------
 .. [Pres2018] Preskill, J., 2018. Quantum Computing in the NISQ era and beyond. Quantum, 2, p.79.
 .. [Arut2019] Arute, F., Arya, K., Babbush, R., Bacon, D., Bardin, J.C., Barends, R., Biswas, R., Boixo, S., Brandao, F.G., Buell, D.A. and Burkett, B., 2019. Quantum supremacy using a programmable superconducting processor. Nature, 574(7779), pp.505-510.
