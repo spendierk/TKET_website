@@ -2,7 +2,7 @@
 Introduction to TKET
 =====================
 
-TKET is an advanced, open-source software development kit designed for gate-based quantum computers like Quantinuum's ion-trap devices. Its primary role is to compile and optimize quantum circuits for a variety of quantum hardware and simulators, ensuring high performance and compatibility.
+TKET is an advanced, open-source software development kit designed for gate-based quantum computers. Its primary role is to compile and optimize quantum circuits for a variety of quantum hardware and simulators, ensuring high performance and compatibility.
 
 
 In the current NISQ (Noisy Intermediate-Scale Quantum) era, devices have limited qubits and higher error rates. TKET plays a crucial role in optimizing and simplifying quantum circuits to navigate these challenges, ensuring reliable outcomes even with device constraints and noise considerations.
