@@ -13,13 +13,13 @@ Key Features:
 - **Quantum Compiler**: TKET, underpinned by a high-performance C++ library, is a high-performance compiler that tailors quantum circuits to the constraints of specific quantum hardware.
 - **Platform Agnostic**: TKET can target various quantum processing units (QPUs) and simulators.
 - **Integration with Libraries**: TKET is compatible with popular quantum libraries such as Qiskit, Cirq, Braket, PennyLane, and more.
-- **Python Interface**: TKET is accessible through its Python package, `pytket`, available on GitHub. Install with the command `pip install pytket`.
+- **Python Interface**: TKET is accessible through its Python package, ``pytket``, available on GitHub. Install with the command ``pip install pytket``. For any difficulties with installation, please consult our `troubleshooting <https://cqcl.github.io/tket/pytket/api/install.html>`_ page.
 
 Quantum Computing Stack Overview:
 ---------------------------------
 
 1. **Use Cases**: Specific tasks like machine learning and chemistry tackled using quantum algorithms.
-2. **Software Applications**: Generate quantum circuits, like a QFT, with universal gates.
+2. **Software Applications**: Generate quantum circuits, like the quantum Fourier transform (QFT), with universal gates.
 3. **TKET Optimization**: Refines circuits based on hardware limitations, such as stricter gatesets and qubit connectivity.
 4. **Hardware Translation**: Post-TKET processing translates optimized circuits into machine code for QPUs.
 
@@ -28,26 +28,13 @@ Quantum Computing Stack Overview:
 Backend Support:
 ----------------
 
-Through pytket, users can interact with TKET and platforms like Qiskit, Cirq, and PennyLane. Once circuits are optimized, TKET can compile them for devices like Quantinuum's ion trap and IBMQ's superconducting units. TKET offers Python packages for various backends, with cloud integration for AWS Braket and Microsoft Azure.
+Through ``pytket``, users can interact with TKET and platforms like Qiskit, Cirq, and PennyLane. Once circuits are optimized, TKET can compile them for devices like Quantinuum's ion trap and IBMQ's superconducting units. TKET offers Python packages for various backends, with cloud integration for AWS Braket and Microsoft Azure.
 
-Installation
-------------
-
-.. license
-.. pip install pytket
-
-Tket is currently available through its pythonic realisation ``pytket``, which is freely available under the Apache 2 license. To install using the ``pip`` package manager, just run ``pip install pytket`` from your terminal. Each extension module can also be installed similarly as ``pip install pytket_X``, e.g. ``pip install pytket_qiskit``.
-
-.. Link to troubleshooting
-
-``pytket`` is available for python versions 3.8-10 on Linux, MacOS, and Windows. For any difficulties with installation, please consult our `troubleshooting <https://cqcl.github.io/tket/pytket/api/install.html>`_ page.
 
 How To Cite
 -----------
 
-.. Instructions and link to paper
-
-If you wish to cite tket in any academic publications, we generally recommend citing our `software overview paper <https://doi.org/10.1088/2058-9565/ab8e92>`_ for most cases.
+If you wish to cite TKET in any academic publications, we generally recommend citing our `software overview paper <https://doi.org/10.1088/2058-9565/ab8e92>`_ for most cases.
 
 If your work is on the topic of specific compilation tasks, it may be more appropriate to cite one of our other papers:
 
