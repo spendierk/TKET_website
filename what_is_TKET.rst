@@ -2,15 +2,14 @@
 Introduction to TKET
 =====================
 
-TKET is an advanced, open-source software development kit designed for gate-based quantum computers. Its primary role is to compile and optimize quantum circuits for a variety of quantum hardware and simulators, ensuring high performance and compatibility.
+TKET is an advanced, open-source software development kit for gate-based quantum computers. Its primary role is to compile and optimize quantum circuits for various quantum hardware and simulators, ensuring high performance and compatibility.
 
-
-In the current NISQ (Noisy Intermediate-Scale Quantum) era, devices have limited qubits and higher error rates. TKET plays a crucial role in optimizing and simplifying quantum circuits to navigate these challenges, ensuring reliable outcomes even with device constraints and noise considerations.
+In the current NISQ (Noisy Intermediate-Scale Quantum) era, devices have limited qubits and high error rates. TKET is crucial in optimizing and simplifying quantum circuits to navigate these challenges, ensuring reliable outcomes even with device constraints and noise considerations.
 
 Key Features:
 -------------
 
-- **Quantum Compiler**: TKET, underpinned by a high-performance C++ library, is a high-performance compiler that tailors quantum circuits to the constraints of specific quantum hardware.
+- **Quantum Compiler**: TKET, underpinned by a high-performance C++ library, is a high-performance compiler that tailors quantum circuits to the constraints of specific quantum hardware and simulators.
 - **Platform Agnostic**: TKET can target various quantum processing units (QPUs) and simulators.
 - **Integration with Libraries**: TKET is compatible with popular quantum libraries such as Qiskit, Cirq, Braket, PennyLane, and more.
 - **Python Interface**: TKET is accessible through its Python package, ``pytket``, available on GitHub. Install with the command ``pip install pytket``. For any difficulties with installation, please consult our `troubleshooting <https://cqcl.github.io/tket/pytket/api/install.html>`_ page.
@@ -23,7 +22,6 @@ Quantum Computing Stack Overview:
 3. **TKET Optimization**: Refines circuits based on hardware limitations, such as stricter gatesets and qubit connectivity.
 4. **Hardware Translation**: Post-TKET processing translates optimized circuits into machine code for QPUs.
 
-.. note:: Visual Element Suggestion: A vertical stack diagram illustrating the quantum computing stack, highlighting TKET's position and its role in optimization.
 
 Backend Support:
 ----------------
@@ -34,7 +32,7 @@ Through ``pytket``, users can interact with TKET and platforms like Qiskit, Cirq
 How To Cite
 -----------
 
-If you wish to cite TKET in any academic publications, we generally recommend citing our `software overview paper <https://doi.org/10.1088/2058-9565/ab8e92>`_ for most cases.
+If you wish to cite TKET in any academic publications, we recommend citing our `software overview paper <https://doi.org/10.1088/2058-9565/ab8e92>`_ for most cases.
 
 If your work is on the topic of specific compilation tasks, it may be more appropriate to cite one of our other papers:
 
@@ -54,9 +52,9 @@ If you spot any bugs or have any feature suggestions, feel free to add to the is
 .. For more specific assistance, e-mail tket-support
 .. To open up direct support channels or collaboration with teams, e-mail Denise?
 
-There is a public slack channel for community discussion and support. Click `here <https://join.slack.com/t/tketusers/shared_invite/zt-18qmsamj9-UqQFVdkRzxnXCcKtcarLRA>`_ to join.
+There is a public Slack channel for community discussion and support. Click `here <https://join.slack.com/t/tketusers/shared_invite/zt-18qmsamj9-UqQFVdkRzxnXCcKtcarLRA>`_ to join.
 
-You can also join our `mailing list <https://list.cambridgequantum.com/cgi-bin/mailman/listinfo/tket-users>`_ for updates on new ``pytket`` releases and features. If you would like to open up direct support channels for your team, engage in research collaborations, or inquire about commercial licenses, please get in touch with us (info@cambridgequantum.com). If you have support questions please send them to tket-support@cambridgequantum.com. 
+You can also join our `mailing list <https://list.cambridgequantum.com/cgi-bin/mailman/listinfo/tket-users>`_ for updates on new ``pytket`` releases and features. If you would like to open up direct support channels for your team, engage in research collaborations, or inquire about commercial licenses, please contact us (info@cambridgequantum.com). If you have support questions, please send them to tket-support@cambridgequantum.com. 
 
 
 .. [Pres2018] Preskill, J., 2018. Quantum Computing in the NISQ era and beyond. Quantum, 2, p.79.
