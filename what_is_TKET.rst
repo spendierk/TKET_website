@@ -1,5 +1,5 @@
 
-Introduction to TKET
+What is TKET?
 =====================
 TKET is an advanced, open-source software development kit for gate-based quantum computers. Its primary role is to compile and optimize quantum circuits for various quantum hardware and simulators, ensuring high performance and compatibility.
 
@@ -18,20 +18,34 @@ In the current NISQ (Noisy Intermediate-Scale Quantum) era, devices often come w
 - Execute quantum algorithms with enhanced efficiency.
 - Achieve high accuracy results without compromising on the problem-solving focus.
 
+This documentation targets readers who are already familiar with the basics of quantum computing via the circuit model and want to explore the tools available in TKET. It provides a comprehensive, feature-focussed tour of the platform to take you from “Hello world” to playing with advanced techniques for speeding up and improving the accuracy of your quantum experiments.
 
 Quantum Computing Stack Overview:
 ---------------------------------
-1. **Use Cases**: Specific tasks like machine learning and chemistry tackled using quantum algorithms.
-2. **Software Applications**: Generate quantum circuits, like the quantum Fourier transform (QFT), with universal gates.
-3. **TKET Optimization**: Refines circuits based on hardware limitations, such as stricter gatesets and qubit connectivity.
-4. **Hardware Translation**: Post-TKET processing translates optimized circuits into machine code for QPUs.
+The following schematic provides a comprehensive overview of the quantum computing stack, detailing the progression from high-level tasks to the physical execution on quantum hardware.
+
+.. image:: https://github.com/spendierk/TKET_website/blob/main/QA_workflow.jpg
+   :alt: Alternative text for the image
+   :width: 800px
+   :align: center
+
+- **Use Cases**: These represent specific tasks or challenges one might want to address using quantum computing, like machine learning, chemistry, or optimization problems.
+- **Applications Software**: At this layer, specialized algorithms, such as the Quantum Fourier Transform (QFT), are created to generate quantum circuits using a universal set of gates.
+- **Quantum Circuit**: Represents the raw quantum algorithm with universal gatesets. Here, you can visualize algorithms like QFT as they are intended to operate at a high level.
+- **TKET Optimization**: A critical phase where quantum circuits are refined and optimized considering specific quantum hardware constraints. These constraints include limited qubit connectivity, native gatesets (e.g., ECR, ID, RZ, SX, X), and error rates.
+- **Quantum Simulator**: Before running a quantum algorithm on an actual quantum processor, it can be tested on a quantum simulator. This software tool mimics the behavior of a quantum computer, allowing developers to understand potential outcomes, troubleshoot issues, and refine algorithms without directly using quantum hardware.
+- **Hardware Translation**: Once the circuit is optimized with tools like TKET, it is translated into machine code that quantum processors (QPUs) understand. This code can be directly executed on QPUs or simulated using quantum simulators.
+- **Quantum Processor**: This is the hardware layer where the quantum computations physically take place. Quantum circuits in machine code are executed on these quantum processing units to get the desired results.
+
 
 
 Key Features:
 -------------
+The second schematic illustrates the architecture of TKET, showcasing its versatile compatibility with quantum libraries, its robust compiler capabilities, and the diverse range of quantum processing units and simulators it targets.
+
 .. image:: https://github.com/spendierk/TKET_website/blob/main/tket_architecture.jpg
    :alt: Alternative text for the image
-   :width: 400px
+   :width: 600px
    :align: center
 
 - **Quantum Compiler**: TKET, underpinned by a high-performance C++ library, is a high-performance compiler that tailors quantum circuits to the constraints of specific quantum hardware and simulators. Within TKET's C++ core, quantum circuits are rewritten, device constraints are solved, and optimization is performed.
