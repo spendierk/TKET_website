@@ -9,6 +9,11 @@ In the current NISQ (Noisy Intermediate-Scale Quantum) era, devices have limited
 Key Features:
 -------------
 
+.. image:: /path/to/image.jpg
+   :alt: Alternative text for the image
+   :width: 300px
+   :align: center
+
 - **Quantum Compiler**: TKET, underpinned by a high-performance C++ library, is a high-performance compiler that tailors quantum circuits to the constraints of specific quantum hardware and simulators.
 - **Platform Agnostic**: TKET can target various quantum processing units (QPUs) and simulators.
 - **Integration with Libraries**: TKET is compatible with popular quantum libraries such as Qiskit, Cirq, Braket, PennyLane, and more.
