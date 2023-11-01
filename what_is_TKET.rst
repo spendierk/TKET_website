@@ -1,10 +1,10 @@
-.. note:: 
- This guide is crafted for those already acquainted with the circuit model of quantum computing with the goal of exploring TKET in detail, from its basics to advanced features, helping users enhance your quantum experiments.
-
 What is TKET?
 ==============
 
 TKET is an open-source quantum SDK designed for gate-based quantum computers. It compiles and optimizes quantum circuits, ensuring compatibility and high performance on various quantum devices and simulators. With the challenges of the Noisy Intermediate-Scale Quantum (NISQ) era, TKET stands out in mitigating device constraints and noise for accurate results.
+
+.. note:: 
+ This guide is crafted for those already acquainted with the circuit model of quantum computing with the goal of exploring TKET in detail, from its basics to advanced features, helping users enhance your quantum experiments.
 
 Some Challenges with Quantum Computing
 --------------------------------------
