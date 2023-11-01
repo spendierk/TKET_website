@@ -32,7 +32,7 @@ Benefits to TKET Users
 
 Quantum Computing Stack:
 ------------------------
-This schematic illustrates the quantum computing stack, from high-level tasks down to physical quantum hardware or simulator execution.
+To understand TKET's full potential, let's see where it fits within the quantum computing landscape. This schematic illustrates the quantum computing stack, from high-level tasks down to physical quantum hardware or simulator execution.
 
 .. image:: https://github.com/spendierk/TKET_website/blob/main/QA_workflow.jpg
    :alt: Quantum Computing Stack diagram
@@ -51,7 +51,7 @@ Having outlined the quantum computing stack, let's now focus on TKET's role. Its
 
 TKET Architecture Overview:
 ---------------------------
-To understand TKET's full potential, let's see where it fits within the quantum computing landscape. The following schematic provides a glimpse into TKET's architecture, emphasizing its broad compatibility with quantum libraries, advanced compilation, and diverse target quantum devices and simulators.
+The following schematic provides a glimpse into TKET's architecture, emphasizing its broad compatibility with quantum libraries, advanced compilation, and diverse target quantum devices and simulators.
 
 .. image:: https://github.com/spendierk/TKET_website/blob/main/tket_architecture.jpg
    :alt: TKET Architecture diagram
