@@ -16,22 +16,15 @@ Some Challenges with Quantum Computing
 
 Addressing these quantum computing challenges, TKET emerges as an indispensable tool. Its design and features are tailored to navigate the complexities of quantum computing and offer a streamlined experience. Let's delve into the key aspects that make TKET a standout quantum SDK.
 
-Key TKET Features
-------------
-* **Ease of Use:** Solve complex problems using gate-level quantum computers.
-* **Advanced Compiler:** Optimizes circuits for NISQ technology across different hardware and simulators.
-* **Flexibility:** Independent of programming language, quantum computer, or simulator.
-* **User-Centric:** Focus on techniques without dealing with underlying complexities.
+Key TKET Features and Advantages
+===============================
+- **Ease of Use:** Solve complex problems using gate-level quantum computers.
+- **Advanced Compiler:** Seamlessly navigate the intricacies of NISQ technology with optimized circuits across different hardware and simulators.
+- **Flexibility:** Code with independence, no constraints on programming language, quantum computer, or simulator.
+- **Efficiency:** Prioritize and streamline your problem-solving, allowing TKET to handle the underlying technicalities.
+- **User-Centric Approach:** Remain focused on your projects and techniques, letting TKET manage the complexities.
 
-Advantages of Using TKET
-=========================
-- Seamlessly navigate the complexities of NISQ technology.
-- Code autonomously, regardless of the programming language or quantum hardware.
-- Prioritize and streamline problem-solving, letting TKET manage the technicalities.
-- Enjoy a user-centric experience that places your projects and techniques at the forefront.
-
-With TKET, benefit from an advanced optimizing compiler designed for ease and efficiency in leveraging gate-level quantum computers.
-
+TKET is designed to be an advanced optimizing compiler that prioritizes ease of use and efficiency in leveraging gate-level quantum computers.
 
 Quantum Computing Stack:
 ------------------------
