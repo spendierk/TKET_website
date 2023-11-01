@@ -62,7 +62,7 @@ The following schematic provides a glimpse into TKET's architecture, emphasizing
 
 In addition to the core attributes of its architecture, TKET further bolsters its capability with an array of other notable features. From the flexibility of constructing quantum circuits with an assortment of tools, including standard gates and circuit boxes, to the ease of importing circuits via QASM and QIR. Its rebasing capability ensures your circuits can transition between different gatesets effortlessly. To optimize the execution of quantum algorithms, TKET integrates advanced qubit placement, routing, and custom optimization techniques tailored for unique hardware constraints. For enthusiasts of graphical computation, the support for ZX Diagrams offers an intuitive representation. 
 
-In this guide, we'll delve deeper into these and additional features, offering detailed code implementations and examples to showcase the full breadth of TKET's capabilities.
+This guide delves deeper into these and additional features, offering detailed code implementations and examples to showcase the full breadth of TKET's capabilities.
 
 
 How To Cite
