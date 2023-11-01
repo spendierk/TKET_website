@@ -49,8 +49,8 @@ The following schematic provides a glimpse into TKET's architecture, emphasizing
    :align: center
 
 - **Quantum Compiler**: Anchored by a C++ core, TKET is an efficient compiler adjusting quantum circuits for specific quantum hardware and simulator constraints. Here, quantum circuits undergo rewriting, device constraint resolution, and optimization.
-- **Platform Independence**: TKET targets various quantum processors and simulators, with added cloud access through select platforms.
-- **Library Integration**: Compatible with leading quantum libraries, TKET simplifies circuit creation.
+- **Platform Agnostic Execution**: TKET targets various quantum processors and simulators, with added cloud access through select platforms.
+- **Library Integration**: Compatible with leading quantum libraries, TKET simplifies circuit creation and facilitates code reuse.
 - **Python Interface**: Access TKET via its Python frontend, ``pytket``. Installation is as simple as ``pip install pytket``. For installation issues, refer to our `troubleshooting guide <https://cqcl.github.io/tket/pytket/api/install.html>`_.
 - **Extension Modules**: ``pytket`` `extensions <https://cqcl.github.io/pytket-extensions/api/index.html>`_ connect to different backends and support the cross-compilation of circuits from well-known quantum libraries. 
 
