@@ -1,29 +1,38 @@
+.. note:: 
+ This guide is crafted for those already acquainted with the circuit model of quantum computing with the goal of exploring TKET in detail, from its basics to advanced features, helping users enhance your quantum experiments.
+
 What is TKET?
 ==============
 
 TKET is an open-source quantum SDK designed for gate-based quantum computers. It compiles and optimizes quantum circuits, ensuring compatibility and high performance on various quantum devices and simulators. With the challenges of the Noisy Intermediate-Scale Quantum (NISQ) era, TKET stands out in mitigating device constraints and noise for accurate results.
 
-Key Features
+Some Challenges with Quantum Computing
+--------------------------------------
+- **Not Enough Qubits**: Many exciting quantum applications require a greater number of qubits than what is currently available.
+- **Complex Noise on Qubits**: The qubits we do have are subject to intricate noise patterns, which are challenging to model accurately.
+- **Two-Qubit Gate Errors**: The error rate for two-qubit gates is typically orders of magnitude larger than single-qubit gate errors. Reducing the number of two-qubit gates is crucial to improve computational accuracy.
+- **Early Stages of Quantum Error Correction**: Quantum error correction, essential for robust quantum computation, is still in its experimental infancy.
+- **Influence of Low-Level Details**: The performance of quantum algorithms can be significantly impacted by low-level factors such as gate count and qubit connectivity.
+
+Addressing these quantum computing challenges, TKET emerges as an indispensable tool. Its design and features are tailored to navigate the complexities of quantum computing and offer a streamlined experience. Let's delve into the key aspects that make TKET a standout quantum SDK.
+
+Key TKET Features
 ------------
 * **Ease of Use:** Solve complex problems using gate-level quantum computers.
 * **Advanced Compiler:** Optimizes circuits for NISQ technology across different hardware and simulators.
 * **Flexibility:** Independent of programming language, quantum computer, or simulator.
 * **User-Centric:** Focus on techniques without dealing with underlying complexities.
 
-Benefits
+Benefits to TKET Users
 --------
 * Code using your preferred language.
 * Efficient execution of quantum algorithms.
 * High accuracy without losing focus on problem-solving.
 
-Target Audience
----------------
-This guide is for readers familiar with quantum computing's circuit model. Dive into a detailed tour of TKET, from basics to advanced techniques, to enhance your quantum experiments.
-
 
 Quantum Computing Stack:
 ------------------------
-This schematic illustrates the quantum computing stack, from high-level tasks down to physical quantum hardware execution.
+This schematic illustrates the quantum computing stack, from high-level tasks down to physical quantum hardware or simulator execution.
 
 .. image:: https://github.com/spendierk/TKET_website/blob/main/QA_workflow.jpg
    :alt: Quantum Computing Stack diagram
@@ -38,10 +47,11 @@ This schematic illustrates the quantum computing stack, from high-level tasks do
 - **Hardware Translation**: Post-optimization, the circuit is converted into machine code for quantum processors (QPUs) or quantum simulators.
 - **Quantum Processor**: The hardware layer where quantum circuits are physically executed to produce results.
 
+Having outlined the quantum computing stack, let's now focus on TKET's role. Its architecture seamlessly bridges high-level applications to quantum hardware, ensuring efficient execution of quantum algorithms.
 
 TKET Architecture Overview:
 ---------------------------
-The following schematic provides a glimpse into TKET's architecture, emphasizing its broad compatibility with quantum libraries, advanced compilation, and diverse target quantum devices and simulators.
+To understand TKET's full potential, let's see where it fits within the quantum computing landscape. The following schematic provides a glimpse into TKET's architecture, emphasizing its broad compatibility with quantum libraries, advanced compilation, and diverse target quantum devices and simulators.
 
 .. image:: https://github.com/spendierk/TKET_website/blob/main/tket_architecture.jpg
    :alt: TKET Architecture diagram
