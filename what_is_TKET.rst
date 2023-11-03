@@ -19,7 +19,7 @@ Addressing these quantum computing challenges, TKET emerges as an indispensable 
 Key TKET Features and Advantages
 ===============================
 - **Ease of Use:** Solve complex problems using gate-level quantum computers.
-- **Advanced Compiler:** Seamlessly navigate the intricacies of NISQ technology with optimized circuits across different hardware and simulators.
+- **Advanced Compiler:** Seamlessly navigates the intricacies of NISQ technology with optimized circuits across different hardware and simulators.
 - **Flexibility:** Code with independence, no constraints on programming language, quantum computer, or simulator.
 - **Efficiency:** Prioritize and streamline your problem-solving, allowing TKET to handle the underlying technicalities.
 - **User-Centric Approach:** Remain focused on your projects and techniques, letting TKET manage the complexities.
@@ -38,7 +38,7 @@ To understand TKET's full potential, let's see where it fits within the quantum 
 - **Use Cases**: Tasks or challenges addressed using quantum computing, such as machine learning, chemistry, or optimization.
 - **Application Software**: Here, specialized algorithms generate quantum circuits from a universal set of gates, like the Quantum Fourier Transform (QFT).
 - **Quantum Circuit**: The raw quantum algorithm using universal gate sets, showcasing high-level operations of algorithms like QFT.
-- **TKET Optimization**: A crucial stage where quantum circuits are tailored for specific quantum hardware constraints, considering qubit connectivity, native gates, and error rates.
+- **TKET Optimization**: A crucial stage where quantum circuits are tailored for specific quantum hardware constraints, considering qubit connectivity, native gates, and error rates. Circuit optimization also occurs at this stage.
 - **Quantum Simulator**: A tool that emulates quantum computer behavior, letting developers test and refine algorithms without using actual quantum hardware.
 - **Hardware Translation**: Post-optimization, the circuit is converted into machine code for quantum processors (QPUs) or quantum simulators.
 - **Quantum Processor**: The hardware layer where quantum circuits are physically executed to produce results.
