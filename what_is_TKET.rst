@@ -11,16 +11,25 @@ Quantum computing is difficult because of:
 - **Technical Limitations**: Algorithm performance is limited by the number of gates (circuit depth).
 - **Resource Constraints**: Current quantum computers don't have enough qubits for many applications.
 - **Noise Constraints**: Existing qubits and quantum gates are noisy, requiring us to use fewer gates to limit errors. 
-- **Device constraints**: Specific challenges arise from gate choice, qubit connectivity, and hardware-specific nuances.
+- **Device Constraints**: Specific challenges arise from gate choice, qubit connectivity, and hardware-specific nuances.
 
 TKET addresses these constraints and limitations in quantum computing.
 
 Key TKET Features and Advantages
 ===============================
+- **Intuitive Constructs:** With TKET, users can specify operations directly without the need to develop their own compiler; the system optimizes tasks automatically.
 - **Advanced Compiler:** TKET automatically addresses many constraints and limitations of NISQ devices.
-- **Flexibility:** TKET operates independently of the programming language chosen for the algorithm and the specific quantum computer running the circuit.
+- **Flexibility:** TKET operates independently of the programming language chosen for the algorithm and the specific quantum computer or simulator running the circuit.
 - **Efficiency:** TKET's streamlined design means users can concentrate on their technique or project without getting bogged down in technical details.
-(add bullet point for high-level constructions - from the ease of use point of view - but don't say "easy to use." you don't have to write your own compiler, you can just say the operation you want; the compiler will do the optimization for you)
+
+
+OR
+
+- **Direct Operations**: With TKET, tell it what you want, and it handles the complex parts.
+- **Smart Compiler**: TKET deals with common issues found in NISQ devices.
+- **Flexibility**: Use TKET no matter your coding language or the quantum machine you're using.
+- **Focus on Your Work**: TKET takes care of the technical side, so you can work on your main project.
+
 
 TKET is designed to be an advanced optimizing compiler that prioritizes ease of use and efficiency in leveraging gate-level quantum computers.
 
