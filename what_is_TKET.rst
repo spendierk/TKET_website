@@ -17,9 +17,10 @@ TKET addresses these constraints and limitations in quantum computing.
 
 Key TKET Features and Advantages
 ===============================
-- **Ease of Use:** TKET automatically addresses many constraints and limitations of NISQ devices.
+- **Advanced Compiler:** TKET automatically addresses many constraints and limitations of NISQ devices.
 - **Flexibility:** TKET operates independently of the programming language chosen for the algorithm and the specific quantum computer running the circuit.
 - **Efficiency:** TKET's streamlined design means users can concentrate on their technique or project without getting bogged down in technical details.
+(add bullet point for high-level constructions - from the ease of use point of view - but don't say "easy to use." you don't have to write your own compiler, you can just say the operation you want; the compiler will do the optimization for you)
 
 TKET is designed to be an advanced optimizing compiler that prioritizes ease of use and efficiency in leveraging gate-level quantum computers.
 
