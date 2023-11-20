@@ -1,16 +1,25 @@
 
-PauliExponential Boxes in Pytket
+`PauliExponential` Boxes in `pytket`
 ================================
 
 Motivation and Context
 ----------------------
-Pauli Exponential Boxes (PauliExpBoxes) in pytket are crucial constructs commonly used in various quantum algorithms and high-level circuit descriptions. These boxes represent the exponential of a Pauli tensor, a fundamental component in Trotterising evolution operators and native device operations.
+Pauli Exponential Boxes (`PauliExpBoxes`) in `pytket` are crucial constructs commonly used in various quantum algorithms and high-level circuit descriptions. These boxes represent the exponential of a Pauli tensor, a fundamental component in Trotterising evolution operators and native device operations.
 
-The reader should be familiar with basic quantum computing concepts and pytket's circuit manipulation functionalities. For an introduction, refer to [Introduction to Pytket](link_to_intro_page).
+The reader should be familiar with basic quantum computing concepts and `pytket`'s circuit manipulation functionalities. For an introduction, refer to [Introduction to Pytket](link_to_intro_page).
 
-PauliExpBoxes are integral to the broader scope of quantum circuit optimization and manipulation in TKET. They leverage the algebraic properties of Pauli gadgets for efficient quantum computation.
+These Pauli gadget circuits have interesting algebraic properties which are useful for circuit optimisation. For instance Pauli gadgets are unitarily invariant under the permutation of their qubits. For further discussion see the research publication on phase gadget synthesis [Cowt2020]_. Ideas from this paper are implemented in TKET as the `OptimisePhaseGadgets <https://cqcl.github.io/tket/pytket/api/passes.html#pytket.passes.OptimisePhaseGadgets>`_ and `PauliSimp <https://cqcl.github.io/tket/pytket/api/passes.html#pytket.passes.PauliSimp>`_ optimisation passes.
 
-See [Cowt2020] for more on phase gadget synthesis, related to PauliExpBox optimizations in TKET.
+Mathematical Description
+------------------------
+A Pauli Exponential Box in pytket represents the operation:
+
+.. math::
+    \begin{equation}
+    e^{-i rac{	heta}{2} P}\,, \quad P \in \{I, X, Y, Z\}^{\otimes n}
+    \end{equation} 
+
+where $ \theta $ is a phase angle, and $P$ is a tensor product of Pauli matrices. This operation is crucial in quantum algorithms for simulating quantum systems and in constructing various quantum gates.
 
 Implementation/Usage
 ---------------------
@@ -31,12 +40,8 @@ The `add_pauliexpbox` method allows appending a PauliExpBox to a circuit. This b
     circuit = Circuit(4)
     circuit.add_pauliexpbox(xyyz, [0, 1, 2, 3])
 
-Feature 2: PauliExpCommutingSetBox and PauliExpPairBox
+Feature 2: `PauliExpPairBox`
 -----------------------------------------------------
-`PauliExpPairBox` and `PauliExpCommutingSetBox` in pytket allow for the implementation of complex quantum operations involving pairs and sets of commuting Pauli exponentials.
-
-**PauliExpPairBox Example:**
-
 The `PauliExpPairBox` represents a pair of exponentials of a tensor of Pauli operations. This can be useful for creating entangled states or specific quantum gates.
 
 .. code-block:: python
@@ -51,8 +56,8 @@ The `PauliExpPairBox` represents a pair of exponentials of a tensor of Pauli ope
     circuit = Circuit(2)
     circuit.add_pauliexppairbox(pair_box, [0, 1])
 
-**PauliExpCommutingSetBox Example:**
-
+Feature 3: PauliExpCommutingSetBox
+-----------------------------------------------------
 The `PauliExpCommutingSetBox` is used for a set of commuting exponentials of Pauli operations. This is particularly useful in algorithms where commuting operations can be grouped for efficiency.
 
 .. code-block:: python
@@ -69,9 +74,35 @@ The `PauliExpCommutingSetBox` is used for a set of commuting exponentials of Pau
 
 Advanced Topics/Features
 ------------------------
-Advanced uses of PauliExpBoxes may involve optimizing phase gadgets and employing complex algebraic properties for circuit optimization.
 
-Refer to [Advanced Pytket Techniques](link_to_advanced_techniques_page) for a deeper exploration of these topics.
+Trotterization with PauliExpBoxes
+---------------------------------
+Trotterization is an advanced technique used in quantum computing for simulating the evolution of quantum systems. It involves breaking down a complex exponential operator into a product of simpler exponentials that are easier to implement on quantum hardware.
+
+In pytket, PauliExpBoxes can be used to implement Trotterization steps. A minimal example demonstrating this is shown below:
+
+.. code-block:: python
+
+    from pytket.circuit import PauliExpBox, Circuit
+    from pytket.pauli import Pauli
+    import numpy as np
+
+    # Define the Trotter step for a Hamiltonian H = X0 X1 + Y0 Y1
+    theta = np.pi / 4  # Example evolution time
+    trotter_step = Circuit(2)
+    trotter_step.add_pauliexpbox(PauliExpBox([Pauli.X, Pauli.X], theta), [0, 1])
+    trotter_step.add_pauliexpbox(PauliExpBox([Pauli.Y, Pauli.Y], theta), [0, 1])
+
+    # Example: Apply 3 Trotter steps
+    for _ in range(3):
+        trotter_step.append(trotter_step)
+
+This example represents a simple case of trotterizing a two-qubit Hamiltonian. In practice, the Hamiltonian and the Trotter step count can be more complex, depending on the quantum simulation requirements.
+
+Refer to [Link to Knowledge Article SU2] for more comprehensive insights into trotterization techniques in quantum computing.
+
+
+
 
 References
 ----------
