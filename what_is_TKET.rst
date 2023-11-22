@@ -26,9 +26,9 @@ Key TKET Features and Advantages
 OR
 
 - **Direct Operations**: With TKET, tell it what you want, and it handles the complex parts.
-- **Smart Compiler**: TKET deals with common issues found in NISQ devices.
-- **Flexibility**: Use TKET no matter your coding language or the quantum machine you're using.
-- **Focus on Your Work**: TKET takes care of the technical side, so you can work on your main project.
+- **Smart Compiler**: TKET deals with common constraints found in NISQ devices.
+- **Flexibility**: Use TKET no matter your coding language or the quantum computer/simulator you're using.
+- **Focus on Your Work**: TKET handles the technical side so that you can work on your main project.
 
 
 TKET is designed to be an advanced optimizing compiler that prioritizes ease of use and efficiency in leveraging gate-level quantum computers.
