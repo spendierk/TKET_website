@@ -37,7 +37,7 @@ Quantum Computing Stack:
 ------------------------
 To understand TKET's full potential, let's see where it fits within the quantum computing landscape. This schematic illustrates the quantum computing stack, from high-level tasks down to physical quantum hardware or simulator execution.
 
-.. image:: https://github.com/spendierk/TKET_website/blob/main/QA_workflow.jpg
+.. image:: https://github.com/spendierk/TKET_website/blob/main/QA_workflow2.jpg
    :alt: Quantum Computing Stack diagram
    :width: 800px
    :align: center
