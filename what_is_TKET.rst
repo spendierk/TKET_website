@@ -20,19 +20,10 @@ TKET addresses these constraints and limitations in quantum computing.
 
 Key TKET Features and Advantages
 ===============================
-- **Intuitive Constructs:** With TKET, users can specify operations directly without the need to develop their own compiler; the system optimizes tasks automatically.
-- **Advanced Compiler:** TKET automatically addresses many constraints and limitations of NISQ devices.
-- **Flexibility:** TKET operates independently of the programming language chosen for the algorithm and the specific quantum computer or simulator running the circuit.
-- **Efficiency:** TKET's streamlined design means users can concentrate on their technique or project without getting bogged down in technical details.
-
-
-OR
-
 - **Direct Operations**: With TKET, tell it what you want, and it handles the complex parts.
 - **Smart Compiler**: TKET deals with common constraints found in NISQ devices.
 - **Flexibility**: Use TKET no matter your coding language or the quantum computer/simulator you're using.
 - **Focus on Your Work**: TKET handles the technical side so that you can work on your main project.
-
 
 TKET is designed to be an advanced optimizing compiler that prioritizes ease of use and efficiency in leveraging gate-level quantum computers.
 
@@ -40,7 +31,7 @@ Quantum Computing Stack:
 ------------------------
 To understand TKET's full potential, let's see where it fits within the quantum computing landscape. This schematic illustrates the quantum computing stack, from high-level tasks down to physical quantum hardware or simulator execution.
 
-.. image:: https://github.com/spendierk/TKET_website/blob/main/QA_workflow2.jpg
+.. image:: https://github.com/spendierk/TKET_website/blob/main/QA_workflow3.jpg
    :alt: Quantum Computing Stack diagram
    :width: 800px
    :align: center
@@ -50,8 +41,9 @@ To understand TKET's full potential, let's see where it fits within the quantum 
 - **Quantum Circuit**: The fundamental quantum algorithm uses universal gate sets and all-to-all connectivity, illustrating the core operations of algorithms like QFT.
 - **Classical Simulator**: This tool allows quantum circuits to run on a classical simulator, such as a state vector simulator.
 - **Quantum Circuit Compiler**: Quantum circuits are tailored for specific quantum hardware constraints using TKET, considering qubit connectivity, native gates, and error rates. Circuit optimization also occurs at this stage.
+- **QIR/QASM**: QIR (Quantum Intermediate Representation) and QASM (Quantum Assembly Language) are hardware-agnostic descriptions of quantum algorithms that are transformed into concrete, executable forms tailored to the specific requirements of the simulation or quantum hardware environments.
 - **Quantum Simulator/Emulator**: A tool that simulates/emulates quantum computer behavior, letting developers test and refine algorithms without using actual quantum hardware.
-- **Hardware Translation**: Post-optimization, the circuit is converted into machine code for quantum processors (QPUs) or quantum simulators.
+- **Machine Code**: Post-optimization, the circuit is converted into machine code for quantum processors (QPUs) or quantum simulators.
 - **Quantum Processor**: The hardware layer where quantum circuits are physically executed to produce results.
 
 Having outlined the quantum computing stack, let's focus on TKET's role. Its architecture bridges high-level applications to quantum hardware, ensuring efficient execution of quantum algorithms.
