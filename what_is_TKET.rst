@@ -66,14 +66,6 @@ To understand TKET's full potential, let's see where it fits within the quantum 
 
 TKET supports a variety of optimization levels, from basic translations of circuits to fit hardware constraints to advanced optimizations that significantly reduce gate counts. For users seeking to push the boundaries of optimization, TKET offers detailed control over the compilation process, enabling fine-tuning to achieve the best possible performance for specific quantum circuits.
 
-TKET Architecture Overview:
----------------------------
-
-TKET's architecture is enhanced with several technical features. It allows the construction of quantum circuits using various tools, such as standard gates and circuit boxes, and supports importing circuits through QASM and QIR formats. The rebasing feature facilitates the conversion of circuits between different gate sets. For efficient quantum algorithm execution, TKET employs qubit placement, routing, and optimizations customized for specific hardware limitations. Additionally, it supports ZX Diagrams, enabling a visual approach to quantum computation.
-
-This guide further explains these and other features, including code implementations and examples, to illustrate TKET's capabilities in detail.
-
-
 How To Cite
 -----------
 
