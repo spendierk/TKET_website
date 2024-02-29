@@ -55,10 +55,10 @@ To understand TKET's full potential, let's see where it fits within the quantum 
    :align: center
 
 - **Use Cases**: Problems addressed using quantum computing, encompassing areas like machine learning, chemistry, or optimization.
-- **Application Software**: Specialized algorithms generate quantum circuits from a universal set of gates, like the Quantum Fourier Transform (QFT).
-- **Quantum Circuit**: The fundamental quantum algorithm uses universal gate sets and all-to-all connectivity, illustrating the core operations of algorithms like QFT.
+- **Application Software**: Specialized algorithms generate quantum circuits for a given use case.
+- **Quantum Circuit**: The fundamental quantum algorithm uses universal gate sets and all-to-all connectivity to describe the quantum Fourier transform (QFT), for example.
 - **Classical Simulator**: This tool allows quantum circuits to run on a classical simulator, such as a state vector simulator.
-- **Quantum Circuit Compiler**: Quantum circuits are tailored for specific quantum hardware constraints using TKET, considering qubit connectivity, native gates, and error rates. Circuit optimization also occurs at this stage.
+- **Quantum Circuit Compiler**: Quantum circuits are tailored for specific quantum hardware constraints using TKET, for example, considering qubit connectivity, native gate sets, and quantum gate error rates. Circuit optimization also occurs at this stage.
 - **QIR/QASM**: QIR (Quantum Intermediate Representation) and QASM (Quantum Assembly Language) are hardware-agnostic descriptions of quantum algorithms that are transformed into concrete, executable forms tailored to the specific requirements of the simulation or quantum hardware environments.
 - **Quantum Simulator/Emulator**: A tool that simulates/emulates quantum computer behavior, letting developers test and refine algorithms without using actual quantum hardware.
 - **Machine Code**: Post-optimization, the circuit is converted into machine code for quantum processors (QPUs) or quantum simulators.
