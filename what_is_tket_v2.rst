@@ -22,7 +22,21 @@ Extensions and Interoperability
 
 A key feature of TKET is its extensive support for interoperability with other quantum computing frameworks and hardware platforms. Through extension modules, users can easily integrate TKET with their preferred quantum computing resources. These extensions cover a wide range of functionalities, from accessing different quantum hardware and simulators to interfacing with other quantum programming languages and libraries. This flexibility makes TKET a versatile tool for quantum software development, accommodating a variety of use cases and preferences.
 
-Conclusion
-==========
 
-TKET represents a significant advancement in quantum software development, offering a comprehensive toolkit for optimizing and executing quantum circuits across multiple platforms. Its combination of performance, flexibility, and extensibility makes it a valuable resource for researchers, developers, and enthusiasts in the quantum computing community. As the field of quantum computing continues to evolve, tools like TKET will play a crucial role in bridging the gap between theoretical algorithms and practical, real-world quantum computations.
+How To Cite
+===========
+
+For general references to TKET, cite our `software overview paper <https://doi.org/10.1088/2058-9565/ab8e92>`_. For specific compilation topics, consider:
+
+- `Qubit routing <https://doi.org/10.4230/LIPIcs.TQC.2019.5>`_.
+- `Phase Gadget Synthesis <https://doi.org/10.4204/EPTCS.318.13>`_.
+- `Compilation Strategy for Unitary Coupled Cluster Ansatz <https://arxiv.org/abs/2007.10515>`_.
+
+For benchmarking against TKET, see our `benchmark repository <https://github.com/CQCL/tket_benchmarking>`_. Please specify the ``pytket`` release version in benchmarks. For benchmark guidance, contact us.
+
+
+Support
+=======
+- Report bugs or suggest features on our `GitHub issues board <https://github.com/CQCL/pytket>`_. Detailed error messages and steps to reproduce help expedite resolutions.
+- Engage in community discussions and seek support in our `Slack channel <https://join.slack.com/t/tketusers/shared_invite/zt-18qmsamj9-UqQFVdkRzxnXCcKtcarLRA>`_.
+- For team-specific support, research partnerships, or commercial license queries, contact us at info@cambridgequantum.com. For support-related questions, write to tket-support@cambridgequantum.com.
