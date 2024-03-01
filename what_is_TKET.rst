@@ -3,7 +3,7 @@ What is TKET?
 
 TKET is an open-source quantum software development kit (SDK) for gate-based quantum computers. It compiles and optimizes quantum circuits, including the optimization of quantum kernels—a combination of quantum and classical operations—ensuring compatibility and high performance on various quantum devices and simulators. Additionally, TKET facilitates the dispatch of these optimized kernels to the quantum computer and processes the received counts, or measurement outcomes, from the quantum computation. TKET is a platform-agnostic software and extracts the most out of the available noisy intermediate-scale quantum (NISQ) devices of today.
 
-TKET is available under the Apache 2 license and implemented in C++, with a Python module, ``pytket``, providing a more accessible interface for users. This arrangement leverages the high performance of C++ for core operations while utilizing Python for tasks like network communication and result processing. TKET integrates with a wide range of quantum computing platforms and frameworks through extension modules, such as ``pytket-quantinuum`` for Quantinuum hardware and ``pytket-qiskit`` for IBM's Qiskit and their IBM Quantum systems, among others.
+TKET is available under the Apache 2 license and implemented in C++, with a Python module, ``pytket``, providing a more accessible interface for users. This arrangement leverages the high performance of C++ for core operations while utilizing Python for tasks like network communication and result processing. TKET integrates with a wide range of quantum computing platforms and frameworks through extension modules, such as ``pytket-quantinuum`` for Quantinuum hardware and ``pytket-qiskit`` for IBM's quantum SDK Qiskit and their quantum systems, among others.
 
 Why TKET?
 ==============
@@ -39,11 +39,9 @@ Supporting Quantum Intermediate Representations
 ------------------------------------------------
 The workflow supports a variety of intermediate representations, such as extended QASM, the Qiskit Object format, Quantum Intermediate Representation (QIR), and HUGR—a new intermediate representation developed by the TKET team. These representations act as conduits between the abstract circuit description and the tangible execution instructions required by quantum processors or simulators.
 
-Workflow Schematic
-------------------
-The provided schematic visualizes the workflow from the end-user's application software, through the TKET compilation process, to the ultimate execution on either quantum or classical processing units.
-
-This workflow enables users to concentrate on the algorithmic dimensions of quantum computing while leveraging TKET and subsequent tools to manage the complexities of circuit optimization, translation, and execution.
+.. COMMENT
+.. add workflow schematic like Ross's from his RIKEN talk
+.. The provided schematic visualizes the workflow from the end user's application software through the TKET compilation process to the ultimate execution on either quantum or classical processing units. This workflow enables users to concentrate on the algorithmic dimensions of quantum computing while leveraging TKET and subsequent tools to manage the complexities of circuit optimization, translation, and execution.
 
 Key TKET Features and Advantages
 ===============================
@@ -58,19 +56,9 @@ Extensions and Interoperability
 --------------------------------
 A key feature of TKET is its extensive support for interoperability with other quantum computing frameworks and hardware platforms. Through extension modules, users can easily integrate TKET with their preferred quantum computing resources. These extensions cover a wide range of functionalities, from accessing different quantum hardware and simulators to interfacing with other quantum programming languages and libraries. This flexibility makes TKET a versatile tool for quantum software development, accommodating a variety of use cases and preferences.
 
-The following schematic provides a glimpse into TKET's architecture, highlighting its compatibility with quantum libraries and its ability to target a diverse range of quantum devices and simulators.
-
-.. image:: https://github.com/spendierk/TKET_website/blob/main/tket_architecture.jpg
-   :alt: TKET Architecture diagram
-   :width: 600px
-   :align: center
-
-- **Quantum Compiler**: Anchored by a C++ core, TKET is an efficient compiler adjusting quantum circuits for specific quantum hardware and simulator constraints. Here, quantum circuits undergo rewriting, device constraint resolution, and optimization.
-- **Platform Agnostic Execution**: TKET targets various quantum processors and simulators, with added cloud access through select platforms.
-- **Library Integration**: TKET simplifies circuit creation, facilitates code reuse, and is compatible with leading quantum libraries.
-- **Python Interface**: Access TKET via its Python frontend, ``pytket``. Installation is as simple as ``pip install pytket``. For installation issues, refer to our `troubleshooting guide <https://cqcl.github.io/tket/pytket/api/install.html>`_.
-- **Extension Modules**: ``pytket`` `extensions <https://cqcl.github.io/pytket-extensions/api/index.html>`_ connect to different backends and support the cross-compilation of circuits from well-known quantum libraries. 
-
+.. COMMENT
+.. add here a schematic like Ross's from his RIKEN talk
+.. The following schematic provides a glimpse into TKET's architecture, highlighting its compatibility with quantum libraries and its ability to target a diverse range of quantum devices and simulators.
 
 How To Cite
 -----------
