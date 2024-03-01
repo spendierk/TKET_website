@@ -38,8 +38,6 @@ Intermediate and Low-Level Processing
 --------------------------------------
 After TKET's compilation, the Compiled Quantum Intermediate Form is handed off to a lower-level compiler, such as L3. This compiler translates the platform-independent circuit description into actual control signals that are suitable for quantum processors. Alternatively, the intermediate form may be passed to a quantum simulator, enabling the circuit to be run on a classical computer, thus providing a flexible approach to quantum circuit testing and validation.
 
-
-
 .. COMMENT
 .. add workflow schematic like Ross's from his RIKEN talk
 .. The provided schematic visualizes the workflow from the end user's application software through the TKET compilation process to the ultimate execution on either quantum or classical processing units. This workflow enables users to concentrate on the algorithmic dimensions of quantum computing while leveraging TKET and subsequent tools to manage the complexities of circuit optimization, translation, and execution.
