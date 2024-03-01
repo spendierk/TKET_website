@@ -23,6 +23,28 @@ Extensions and Interoperability
 A key feature of TKET is its extensive support for interoperability with other quantum computing frameworks and hardware platforms. Through extension modules, users can easily integrate TKET with their preferred quantum computing resources. These extensions cover a wide range of functionalities, from accessing different quantum hardware and simulators to interfacing with other quantum programming languages and libraries. This flexibility makes TKET a versatile tool for quantum software development, accommodating a variety of use cases and preferences.
 
 
+Quantum Software Workflow
+------------------------
+To understand TKET's full potential, let's see where it fits within the quantum computing landscape. This schematic illustrates the quantum computing stack, from high-level tasks down to physical quantum hardware or simulator execution.
+
+.. image:: https://github.com/spendierk/TKET_website/blob/main/QA_workflow3.jpg
+   :alt: Quantum Computing Stack diagram
+   :width: 800px
+   :align: center
+
+- **Use Cases**: Problems addressed using quantum computing, encompassing areas like machine learning, chemistry, or optimization.
+- **Application Software**: Specialized algorithms generate quantum circuits for a given use case.
+- **Quantum Circuit**: The fundamental quantum algorithm uses universal gate sets and all-to-all connectivity to describe the quantum Fourier transform (QFT), for example.
+- **Classical Simulator**: This tool allows quantum circuits to run on a classical simulator, such as a state vector simulator.
+- **Quantum Circuit Compiler**: Quantum circuits are tailored for specific quantum hardware constraints using TKET, for example, considering qubit connectivity, native gate sets, and quantum gate error rates. Circuit optimization also occurs at this stage.
+- **QIR/QASM**: QIR (Quantum Intermediate Representation) and QASM (Quantum Assembly Language) are hardware-agnostic descriptions of quantum algorithms that are transformed into concrete, executable forms tailored to the specific requirements of the simulation or quantum hardware environments.
+- **Quantum Simulator/Emulator**: A tool that simulates/emulates quantum computer behavior, letting developers test and refine algorithms without using actual quantum hardware.
+- **Machine Code**: Post-optimization, the circuit is converted into machine code for quantum processors (QPUs) or quantum simulators.
+- **Quantum Processor**: The hardware layer where quantum circuits are physically executed to produce results.
+
+TKET supports a variety of optimization levels, from basic translations of circuits to fit hardware constraints to advanced optimizations that significantly reduce gate counts. For users seeking to push the boundaries of optimization, TKET offers detailed control over the compilation process, enabling fine-tuning to achieve the best possible performance for specific quantum circuits.
+
+
 How To Cite
 ===========
 
